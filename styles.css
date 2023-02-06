@@ -1,0 +1,180 @@
+#fotoPerfil{
+    width: 170px;
+    border-radius: 100%;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
+.borde{
+    border: 3px solid black;
+}
+
+.navbar{
+    height: 60px !important;
+}
+
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.fuente-titulos{
+    font-family: 'Rubik Vinyl', cursive;
+}
+
+.fondoHome{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("");
+}
+
+.fondoAcercaDeMi{
+    background-image: linear-gradient(rgba(221, 207, 207, 0.5), rgba(215, 202, 245, 0.5)), url("../Imgs/fondoAcercaDeMi.jpg");
+    color: black;
+    background-size: cover;
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0;
+}
+
+.header-home{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    height: calc(100vh - 60px);
+    min-height: 500px;
+
+}
+
+.content{
+    max-width: 49rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.header-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header-video video{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.header-overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #303952;
+    z-index: 1;
+    opacity: 0.65;
+}
+
+.header-content{
+    z-index: 2;
+    margin: auto;
+}
+
+.color-fondo-formacion{
+    background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+}
+
+.formacion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjeta-formacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tarjeta-quepuedo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;  
+}
+
+.tamaño-tarjeta{
+    width: 100%;
+    height: 100%;
+    margin: 15px;
+}
+
+.color-header{
+    background-color: #98c3df;
+}
+
+.fondo-formacion{
+    background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}
+
+.fondo-tarjeta{
+    background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+}
+
+.fondo-contacto{
+    background-color: black;
+}
+
+.margen-img{
+    margin-bottom: 10rem!important;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: black !important;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 1;
+    transition: opacity .15s ease;
+}
+
+.fondo-desc-proy{
+    background-color: #cdc1cd;
+}
+
+.fondo-que-puedo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(221, 207, 207, 0.5), rgba(215, 202, 245, 0.5)), url("../Imgs/quepuedo2.jpg");
+    height: 100%;
+    
+}
+
+@media (max-width: 900px) {
+    .tarjeta-quepuedo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+}
+
